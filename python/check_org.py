@@ -1,6 +1,4 @@
 from util import *
-#from types import *
-#from parser import parse
 def check_org(data) :
     reqd_fields = {'organization_id' : 'int', 'name' : 'string'}
     opt_fields = {'fein' : 'string', 'aka' : 'string',
@@ -24,4 +22,8 @@ def check_org(data) :
 
     return True
 
-print "File valid for organizations.csv : " + repr(check_org(parse('../sample/organization1.csv')))
+print "File valid for organizations.csv : " + repr(check_org(parse('../sample/organization1.csv'))) + '\n'
+print "File valid for organizations.csv : " + repr(check_org(parse('../sample/organization2.csv'))) + '\n'
+print "File valid for organizations.csv : " + repr(check_org(parse('../sample/organization3.csv'))) + '\n'
+print "File valid for organizations.csv : " + repr(check_org(parse('../sample/organization4.csv'))) + '\n'
+

@@ -1,9 +1,13 @@
 from util import *
 def check_org(data) :
-    reqd_fields = {'organization_id' : 'string', 'name' : 'string'}
-    opt_fields = {'fein' : 'string', 'aka' : 'string',
-                  'legal_status' : 'string', 'year_of_incorporation' : 'date',
-                  'licenses' : 'string-list', 'accreditation' : 'string-list'}
+    reqd_fields = {'location_id' : 'string', 'organization_id' : 'string',
+                   'name' : 'string'}
+    opt_fields = {'' : 'string',
+                  'aka' : 'string',
+                  'legal_status' : 'string',
+                  'year_of_incorporation' : 'date',
+                  'location_languages' : 'string-list',
+                  'accessibility' : 'string-list'}
     all_fields = dict(reqd_fields.items() + opt_fields.items())
     data_fields = set(data.keys())
     for f in set(reqd_fields.keys()) :

@@ -1,4 +1,4 @@
-location_id,phone_number,phone_extension,phone_hours,phone_type,department
+location_id,phone_number,phone_extension,phone_hours,type,department
 "Lf8PJ9dQhHUmHNtNba8LxRfXo","650 780-7525","","","type",""
 "Lf8PJ9dQhHUmHNtNba8LxRfXo","650 701-0856","","","type",""
 "35aZ4TRqh3GHIpgHI59wqbsfc","650 403-4300"," Ext. 4385","","type",""

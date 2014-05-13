@@ -1,44 +1,106 @@
 <!DOCTYPE HTML>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700"
+          rel="stylesheet" type="text/css">
+    <script src="js/jquery-2.1.1.min.js"></script>
     <script src="js/util/types.js"></script>
     <script src="js/util/parser.js"></script>
     <script src="js/check_file.js"></script>
     <script src="js/check.js"></script>
   </head>
   <body>
-    <h2>OpenReferral Validation Tool</h2>
-    <h3><label for="org">organization.csv</label></h3>
-    <input type="file" id="org" onchange="print_org()"></input>
-    <p id="org-check"></p>
+    <div class="container">
+      <div class="row center">
+        <h2>OpenReferral Validation Tool</h2>
+      </div>
+      <div class="row">
+        <div class="col-md-5 col-md-offset-2">
+          <h3>Required Files:</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-5 col-md-offset-2">
+          <h4 id="org-header" class="invalid">
+            <label for="org">organization.csv</label>
+          </h4>
+          <input type="file" id="org" onchange="print_org()"></input>
+          <br>
+          <p id="org-check"></p>
+        </div>
+        <div class="col-md-5">
+          <h4 id="loc-header" class="invalid">
+            <label for="loc">location.csv</label>
+          </h4>
+          <input type="file" id="loc" onchange="print_loc()"></input>
+          <br>
+          <p id="loc-check"></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-5 col-md-offset-2">
+          <h4 id="service-header" class="invalid">
+            <label for="service">service.csv</label>
+          </h4>
+          <input type="file" id="service" onchange="print_service()"></input>
+          <br>
+          <p id="service-check"></p>
+        </div>
+        <div class="col-md-5">
+          <h4 id="address-header" class="invalid">
+            <label for="address">address.csv</label>
+          </h4>
+          <input type="file" id="address" onchange="print_address()"></input>
+          <br>
+          <p id="address-check"></p>
+        </div>
+      </div>
 
-    <h3><label for="loc">location.csv</label></h3>
-    <input type="file" id="loc" onchange="print_loc()"></input>
-    <p id="loc-check"></p>
-
-    <h3><label for="service">service.csv</label></h3>
-    <input type="file" id="service" onchange="print_service()"></input>
-    <p id="service-check"></p>
-
-    <h3><label for="address">address.csv</label></h3>
-    <input type="file" id="address" onchange="print_address()"></input>
-    <p id="address-check"></p>
-
-    <h3><label for="contact">contact.csv</label></h3>
-    <input type="file" id="contact" onchange="print_contact()"></input>
-    <p id="contact-check"></p>
-
-    <h3><label for="phone">phone.csv</label></h3>
-    <input type="file" id="phone" onchange="print_phone()"></input>
-    <p id="phone-check"></p>
-
-    <h3><label for="internet">internet_resource.csv</label></h3>
-    <input type="file" id="internet" onchange="print_internet()"></input>
-    <p id="internet-check"></p>
-
-    <h3><label for="funding">funding.csv</label></h3>
-    <input type="file" id="funding" onchange="print_funding()"></input>
-    <p id="funding-check"></p>
-
+      <div class="row">
+        <div class="col-md-5 col-md-offset-2">
+          <h3>Optional Files:</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-5 col-md-offset-2">
+          <h4 id="contact-header" class="neutral">
+            <label for="contact">contact.csv</label>
+          </h4>
+          <input type="file" id="contact" onchange="print_contact()"></input>
+          <br>
+          <p id="contact-check"></p>
+        </div>
+        <div class="col-md-5">
+          <h4 id="phone-header" class="neutral">
+            <label for="phone">phone.csv</label>
+          </h4>
+          <input type="file" id="phone" onchange="print_phone()"></input>
+          <br>
+          <p id="phone-check"></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-5 col-md-offset-2">
+          <h4 id="internet-header" class="neutral">
+            <label for="internet">internet_resource.csv</label>
+          </h4>
+          <input type="file" id="internet" onchange="print_internet()"></input>
+          <br>
+          <p id="internet-check"></p>
+        </div>
+        <div class="col-md-5">
+          <h4 id="funding-header" class="neutral">
+            <label for="funding">funding.csv</label>
+          </h4>
+          <input type="file" id="funding" onchange="print_funding()"></input>
+           <br>
+          <p id="funding-check"></p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

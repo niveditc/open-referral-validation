@@ -1,0 +1,67 @@
+body{
+  font-family: 'Open Sans', sans-serif;
+  color : #003366;
+  #background-color : #FFCC99;
+}
+
+.h1, .h2, .h3, h1, h2, h3{
+  font-family: 'Open Sans', sans-serif;
+}
+
+.header{
+  background-color : #FFCCFF;
+}
+
+.center{
+  text-align : center;
+  align: 0px auto;
+}
+
+div {
+  padding-bottom : 10px;
+}
+
+div.img {
+  text-align : center;
+}
+
+div.no-space {
+  margin-bottom : 0px;
+}
+
+div.space-above {
+  padding-top : 10px;
+}
+
+li, ul {
+  margin-bottom : 5px;
+}
+
+a{
+  color : #6699FF;
+}
+
+a.btn {
+  color : #005099;
+}
+
+.cur {
+  font-weight : bold;
+}
+
+.name {
+  font-weight : bold;
+  color : #000000;
+}
+
+.valid {
+  color : green;
+}
+
+.invalid {
+  color : red;
+}
+
+.neutral {
+  color : brown;
+}

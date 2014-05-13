@@ -16,12 +16,43 @@ function parse(doc){
         data[categories[i]] = [];
     }
 
-    for(var i = 1; i < lines.length - 1; i++){
-        var fields = lines[i].split(',');
-        for(var j = 0; j < num_cat; j++){
-            data[categories[j]].push(fields[j]);
+    for(var k = 1; k < lines.length - 1; k++){
+        console.log(k + 1);
+        var line = lines[k];
+        var j = 0;
+        var ended = true;
+        var searching = '';
+        var word = '';
+
+        for(var i = 0; i < line.length; i++){
+            if(ended){
+                if(line.charAt(i) != ','){
+                    ended = false;
+                    word = line.charAt(i);
+                    if(line.charAt(i) == '"'){
+
+                        if(line.charAt(i+1) == '['){
+                            searching = ']"';
+                            word = word + '[';
+                            i++;
+                        } else{
+                            searching = '"';
+                        }
+                    }
+                } else{
+                    j++;
+                }
+            } else{
+                if(line.substring(i, i + searching.length) == searching){
+                    word = word + searching;
+                    i = i + searching.length - 1;
+                    data[categories[j]].push(word);
+                    ended = true;
+                } else{
+                    word = word + line.charAt(i);
+                }
+            }
         }
     }
-
     return data;
 }

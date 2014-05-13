@@ -29,9 +29,20 @@ function isValidDate(date){
 }
 
 function isValidStringList(data){
-    var a = data.split(',');
+    if(data == '"[]"') return true;
+    if(!isValidString(data)){
+        console.log("not string");
+        return false;
+    }
+    if(!(data.charAt(1) == '[' && data.charAt(data.length - 2) == ']')){
+        console.log("not array");
+        return false;
+    }
+    var s = data.substring(2, data.length - 2);
+    var a = s.split(', ');
     for(var i = 0; i < a.length; i++){
         if(!isValidString(a[i])){
+            console.log(a[i] + "is not a valid string");
             return false;
         }
     }
@@ -39,7 +50,7 @@ function isValidStringList(data){
 }
 
 function isValid(type, data){
-    if(type == 'string'){
+    if(type == 'string' || type == 'text' || type == 'comma-sep-strings'){
         return isValidString(data);
     } else if(type == 'int'){
         return isValidNum(data);

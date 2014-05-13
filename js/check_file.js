@@ -99,7 +99,8 @@ function check_address(data){
                        'location_id' : 'string',
                        'name' : 'string',
                        'type' : 'string',
-                       'street' : 'string',
+                       'street_1' : 'string',
+                       'street_2' : 'string',
                        'city' : 'string',
                        'state' : 'string',
                        'postal_code' : 'string'};

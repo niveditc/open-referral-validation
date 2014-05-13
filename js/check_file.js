@@ -88,9 +88,9 @@ function check_service(data){
                       'service_areas' : 'text',
                       'short_desc' : 'string',
                       'service_hours' : 'string',
-                      'service_languages' : 'string-list',
+                      'service_languages' : 'comma-sep-strings',
                       'wait' : 'string',
-                      'method_of_payment' : 'string-list'};
+                      'method_of_payment' : 'comma-sep-strings'};
     return check_file(data, reqd_fields, opt_fields);
 }
 

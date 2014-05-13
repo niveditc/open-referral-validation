@@ -17,7 +17,6 @@ function parse(doc){
     }
 
     for(var k = 1; k < lines.length - 1; k++){
-        console.log(k + 1);
         var line = lines[k];
         var j = 0;
         var ended = true;

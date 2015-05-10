@@ -29,7 +29,8 @@
           <h4 id="org-header" class="invalid">
             <label for="org">organization.csv</label>
           </h4>
-          <input type="file" id="org" onchange="print_org()"></input>
+          <input type="file" id="org"
+                 onchange="printEntity('org', check_org)"></input>
           <br>
           <p id="org-check"></p>
         </div>
@@ -37,7 +38,8 @@
           <h4 id="loc-header" class="invalid">
             <label for="loc">location.csv</label>
           </h4>
-          <input type="file" id="loc" onchange="print_loc()"></input>
+          <input type="file" id="loc"
+                 onchange="printEntity('loc', check_loc)"></input>
           <br>
           <p id="loc-check"></p>
         </div>
@@ -47,7 +49,8 @@
           <h4 id="service-header" class="invalid">
             <label for="service">service.csv</label>
           </h4>
-          <input type="file" id="service" onchange="print_service()"></input>
+          <input type="file" id="service"
+                 onchange="printEntity('service', check_service)"></input>
           <br>
           <p id="service-check"></p>
         </div>
@@ -55,7 +58,8 @@
           <h4 id="address-header" class="invalid">
             <label for="address">address.csv</label>
           </h4>
-          <input type="file" id="address" onchange="print_address()"></input>
+          <input type="file" id="address"
+                 onchange="printEntity('address', check_address)"></input>
           <br>
           <p id="address-check"></p>
         </div>
@@ -71,7 +75,8 @@
           <h4 id="contact-header" class="neutral">
             <label for="contact">contact.csv</label>
           </h4>
-          <input type="file" id="contact" onchange="print_contact()"></input>
+          <input type="file" id="contact"
+                 onchange="printEntity('contact', check_contact)"></input>
           <br>
           <p id="contact-check"></p>
         </div>
@@ -79,7 +84,7 @@
           <h4 id="phone-header" class="neutral">
             <label for="phone">phone.csv</label>
           </h4>
-          <input type="file" id="phone" onchange="print_phone()"></input>
+          <input type="file" id="phone" onchange="printEntity('phone', check_phone)"></input>
           <br>
           <p id="phone-check"></p>
         </div>
@@ -89,7 +94,7 @@
           <h4 id="internet-header" class="neutral">
             <label for="internet">internet_resource.csv</label>
           </h4>
-          <input type="file" id="internet" onchange="print_internet()"></input>
+          <input type="file" id="internet" onchange="printEntity('internet', check_internet)"></input>
           <br>
           <p id="internet-check"></p>
         </div>
@@ -97,7 +102,7 @@
           <h4 id="funding-header" class="neutral">
             <label for="funding">funding.csv</label>
           </h4>
-          <input type="file" id="funding" onchange="print_funding()"></input>
+          <input type="file" id="funding" onchange="printEntity('funding', check_funding)"></input>
            <br>
           <p id="funding-check"></p>
         </div>

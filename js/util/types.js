@@ -49,15 +49,18 @@ function isValidStringList(data) {
   return true;
 }
 
+function isValidPhoneNumber(data) {
+  //TO BE IMPLEMENTED
+  return true;
+}
+
 function isValid(type, data) {
-  if (type == 'string' || type == 'text' || type == 'comma-sep-strings') {
+  if (type == 'string') {
     return isValidString(data);
-  } else if (type == 'int') {
+  } else if (type == 'number' || type == 'float') {
     return isValidNum(data);
   } else if (type == 'date') {
     return isValidDate(data);
-  } else if (type == 'string-list') {
-    return isValidStringList(data);
   } else {
     return false;
   }

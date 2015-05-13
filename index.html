@@ -23,12 +23,13 @@
         <h4>(IN PROGRESS, for v1.0 of the OpenReferral specification)</h4>
       </div>
       <div class="row">
-        <div class="col-md-5 col-md-offset-2">
+        <div class="col-md-3 col-md-offset-1">
           <h3>Required Files:</h3>
         </div>
       </div>
+
       <div class="row">
-        <div class="col-md-5 col-md-offset-2">
+        <div class="col-md-3 col-md-offset-1">
           <h4 id="organization-header" class="invalid">
             <label for="organization">organization.csv</label>
           </h4>
@@ -37,18 +38,18 @@
           <br>
           <p id="organization-check"></p>
         </div>
-        <div class="col-md-5">
-          <h4 id="location-header" class="invalid">
-            <label for="location">location.csv</label>
+
+        <div class="col-md-3 col-md-offset-1">
+          <h4 id="program-header" class="invalid">
+            <label for="program">program.csv</label>
           </h4>
-          <input type="file" id="location"
-                 onchange="printEntity('location')"></input>
+          <input type="file" id="program"
+                 onchange="printEntity('program')"></input>
           <br>
-          <p id="location-check"></p>
+          <p id="program-check"></p>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-md-5 col-md-offset-2">
+
+        <div class="col-md-3 col-md-offset-1">
           <h4 id="service-header" class="invalid">
             <label for="service">service.csv</label>
           </h4>
@@ -57,34 +58,31 @@
           <br>
           <p id="service-check"></p>
         </div>
-        <div class="col-md-5">
-          <h4 id="physical_address-header" class="invalid">
-            <label for="physical_address">address.csv</label>
-          </h4>
-          <input type="file" id="physical_address"
-                 onchange="printEntity('address')"></input>
-          <br>
-          <p id="physical_address-check"></p>
-        </div>
       </div>
 
       <div class="row">
-        <div class="col-md-5 col-md-offset-2">
-          <h3>Optional Files:</h3>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-5 col-md-offset-2">
-          <h4 id="contact-header" class="neutral">
-            <label for="contact">contact.csv</label>
+        <div class="col-md-3 col-md-offset-1">
+          <h4 id="service_at_location-header" class="invalid">
+            <label for="service_at_location">service_at_location.csv</label>
           </h4>
-          <input type="file" id="contact"
-                 onchange="printEntity('contact')"></input>
+          <input type="file" id="service_at_location"
+                 onchange="printEntity('service_at_location')"></input>
           <br>
-          <p id="contact-check"></p>
+          <p id="service_at_location-check"></p>
         </div>
-        <div class="col-md-5">
-          <h4 id="phone-header" class="neutral">
+
+        <div class="col-md-3 col-md-offset-1">
+          <h4 id="location-header" class="invalid">
+            <label for="location">location.csv</label>
+          </h4>
+          <input type="file" id="location"
+                 onchange="printEntity('location')"></input>
+          <br>
+          <p id="location-check"></p>
+        </div>
+
+        <div class="col-md-3 col-md-offset-1">
+          <h4 id="phone-header" class="invalid">
             <label for="phone">phone.csv</label>
           </h4>
           <input type="file" id="phone" onchange="printEntity('phone')"></input>
@@ -92,14 +90,196 @@
           <p id="phone-check"></p>
         </div>
       </div>
+
       <div class="row">
-        <div class="col-md-5 col-md-offset-2">
+        <div class="col-md-3 col-md-offset-1">
+          <h4 id="contact-header" class="invalid">
+            <label for="contact">contact.csv</label>
+          </h4>
+          <input type="file" id="contact"
+                 onchange="printEntity('contact')"></input>
+          <br>
+          <p id="contact-check"></p>
+        </div>
+
+        <div class="col-md-3 col-md-offset-1">
+          <h4 id="physical_address-header" class="invalid">
+            <label for="physical_address">physical_address.csv</label>
+          </h4>
+          <input type="file" id="physical_address"
+                 onchange="printEntity('physical_address')"></input>
+          <br>
+          <p id="physical_address-check"></p>
+        </div>
+
+        <div class="col-md-3 col-md-offset-1">
+          <h4 id="postal_address-header" class="invalid">
+            <label for="physical_address">postal_address.csv</label>
+          </h4>
+          <input type="file" id="postal_address"
+                 onchange="printEntity('postal_address')"></input>
+          <br>
+          <p id="postal_address-check"></p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3 col-md-offset-1">
+          <h4 id="eligibility-header" class="invalid">
+            <label for="eligibility">eligibility.csv</label>
+          </h4>
+          <input type="file" id="eligibility"
+                 onchange="printEntity('eligibility')"></input>
+          <br>
+          <p id="eligibility-check"></p>
+        </div>
+
+        <div class="col-md-3 col-md-offset-1">
+          <h4 id="service_area-header" class="invalid">
+            <label for="service_area">service_area.csv</label>
+          </h4>
+          <input type="file" id="service_area"
+                 onchange="printEntity('service_area')"></input>
+          <br>
+          <p id="service_area-check"></p>
+        </div>
+
+        <div class="col-md-3 col-md-offset-1">
+          <h4 id="required_document-header" class="invalid">
+            <label for="required_document">required_document.csv</label>
+          </h4>
+          <input type="file" id="required_document"
+                 onchange="printEntity('required_document')"></input>
+          <br>
+          <p id="required_document-check"></p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3 col-md-offset-1">
+          <h4 id="fee-header" class="invalid">
+            <label for="fee">fee.csv</label>
+          </h4>
+          <input type="file" id="fee"
+                 onchange="printEntity('fee')"></input>
+          <br>
+          <p id="fee-check"></p>
+        </div>
+
+        <div class="col-md-3 col-md-offset-1">
+          <h4 id="payment_accepted-header" class="invalid">
+            <label for="payment_accepted">payment_accepted.csv</label>
+          </h4>
+          <input type="file" id="payment_accepted"
+                 onchange="printEntity('payment_accepted')"></input>
+          <br>
+          <p id="payment_accepted-check"></p>
+        </div>
+
+        <div class="col-md-3 col-md-offset-1">
+          <h4 id="interpretation_services-header" class="invalid">
+            <label for="interpretation_services">interpretation_services.csv</label>
+          </h4>
+          <input type="file" id="interpretation_services"
+                 onchange="printEntity('interpretation_services')"></input>
+          <br>
+          <p id="interpretation_services-check"></p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3 col-md-offset-1">
+          <h4 id="language-header" class="invalid">
+            <label for="language">language.csv</label>
+          </h4>
+          <input type="file" id="language"
+                 onchange="printEntity('language')"></input>
+          <br>
+          <p id="language-check"></p>
+        </div>
+
+        <div class="col-md-3 col-md-offset-1">
+          <h4 id="accessibility_for_disabilities-header" class="invalid">
+            <label for="accessibility_for_disabilities">accessibility_for_disabilities.csv</label>
+          </h4>
+          <input type="file" id="accessibility_for_disabilities"
+                 onchange="printEntity('accessibility_for_disabilities')"></input>
+          <br>
+          <p id="accessibility_for_disabilities-check"></p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3 col-md-offset-1">
+          <h3>Optional Files:</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 col-md-offset-1">
+          <h4 id="regular_schedule-header" class="neutral">
+            <label for="regular_schedule">regular_schedule.csv</label>
+          </h4>
+          <input type="file" id="regular_schedule" onchange="printEntity('regular_schedule')"></input>
+           <br>
+          <p id="regular_schedule-check"></p>
+        </div>
+
+        <div class="col-md-3 col-md-offset-1">
+          <h4 id="holiday_schedule-header" class="neutral">
+            <label for="holiday_schedule">holiday_schedule.csv</label>
+          </h4>
+          <input type="file" id="holiday_schedule" onchange="printEntity('holiday_schedule')"></input>
+           <br>
+          <p id="holiday_schedule-check"></p>
+        </div>
+
+        <div class="col-md-3 col-md-offset-1">
+          <h4 id="accreditation-header" class="neutral">
+            <label for="accreditation">accreditation.csv</label>
+          </h4>
+          <input type="file" id="accreditation" onchange="printEntity('accreditation')"></input>
+           <br>
+          <p id="accreditation-check"></p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3 col-md-offset-1">
+          <h4 id="license-header" class="neutral">
+            <label for="license">license.csv</label>
+          </h4>
+          <input type="file" id="license" onchange="printEntity('license')"></input>
+           <br>
+          <p id="license-check"></p>
+        </div>
+
+        <div class="col-md-3 col-md-offset-1">
           <h4 id="funding-header" class="neutral">
             <label for="funding">funding.csv</label>
           </h4>
           <input type="file" id="funding" onchange="printEntity('funding')"></input>
            <br>
           <p id="funding-check"></p>
+        </div>
+
+        <div class="col-md-3 col-md-offset-1">
+          <h4 id="metadata-header" class="neutral">
+            <label for="metadata">metadata.csv (recommended)</label>
+          </h4>
+          <input type="file" id="metadata" onchange="printEntity('metadata')"></input>
+           <br>
+          <p id="metadata-check"></p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3 col-md-offset-1">
+          <h4 id="meta_table_description-header" class="neutral">
+            <label for="meta_table_description">meta_table_description.csv</label>
+          </h4>
+          <input type="file" id="meta_table_description" onchange="printEntity('meta_table_description')"></input>
+           <br>
+          <p id="meta_table_description-check"></p>
         </div>
       </div>
     </div>

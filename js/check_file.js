@@ -1,6 +1,6 @@
 function check_file(data, all_keys) {
   var errors = [];
- var data_keys = Object.keys(data);
+  var data_keys = Object.keys(data);
 
   //Getting the required keys
   var reqd_keys = [];

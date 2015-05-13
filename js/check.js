@@ -1,4 +1,4 @@
-function printEntity(entity, checkFun) {
+function printEntity(entity) {
   var elem = document.getElementById(entity);
   var file = elem.files[0];
   var reader = new FileReader();
@@ -6,7 +6,7 @@ function printEntity(entity, checkFun) {
     var doc = reader.result;
     var parsed = parse(doc);
     var p1 = document.getElementById(entity + "-check");
-    var check = checkFun(parsed);
+    var check = check_file(parsed, spec_files[entity]);
     p1.innerText = (check.valid) ? "File is valid" : check.errors;
     var header = $("#" + entity + "-header");
     if (check.valid) {
